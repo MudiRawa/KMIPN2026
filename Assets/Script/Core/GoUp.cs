@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,14 +15,14 @@ public class GoUp : MonoBehaviour
     {
         if (collision.collider.CompareTag("Player"))
         {
-            PanelUp.SetActive(true);
             PlayerShoot.instance.isShooting = true;
+            PanelUp.SetActive(true);
         }
     }
     
-    public void GoUpButton(string scene)
+    public void GoUpButton()
     {
-        SceneManager.LoadScene(scene);
+        StartCoroutine(Wait(1));
         PlayerShoot.instance.isShooting = false;
     }
 
@@ -29,5 +30,11 @@ public class GoUp : MonoBehaviour
     {
         PanelUp.SetActive(false);
         PlayerShoot.instance.isShooting = false;
+    }
+
+    IEnumerator Wait(int time)
+    {
+        yield return new WaitForSeconds(time);
+        SceneManager.LoadScene("Up");
     }
 }

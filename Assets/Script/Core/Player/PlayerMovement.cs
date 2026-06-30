@@ -45,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
         normalGravityScale = rb.gravityScale;
         originalScale = transform.localScale;
         instance = this;
+        oxygen = maxOxygen;
     }
 
     void Update()
@@ -97,6 +98,13 @@ public class PlayerMovement : MonoBehaviour
         {
 
             oxygen -= oxygenDecreaseRate * Time.deltaTime;
+            if (oxygen <= 0f)
+            {
+                oxygen = 0f;
+                PlayerPrefs.SetInt("FishCount", 0);
+                PlayerPrefs.Save();
+                Mati.instance.mati();
+            }
         }
 
         oxygen = Mathf.Clamp(oxygen, 0f, maxOxygen);

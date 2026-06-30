@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -28,6 +29,12 @@ public class Dive : MonoBehaviour
 
     public void DiveButton(string scene)
     {
-        SceneManager.LoadScene(scene);
+        StartCoroutine(Wait(1));
+    }
+
+    IEnumerator Wait(int time)
+    {
+        yield return new WaitForSeconds(time);
+        SceneManager.LoadScene("Laut");
     }
 }

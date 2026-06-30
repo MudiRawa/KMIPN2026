@@ -30,7 +30,6 @@ public class OxygenUI : MonoBehaviour
         }
 
         oxygenSlider.value = player.oxygen;
-        float percent = player.maxOxygen > 0f ? (player.oxygen / player.maxOxygen) * 100f : 0f;
-        oxygenText.text = Mathf.RoundToInt(percent) + "%";
+        oxygenText.text = Mathf.RoundToInt(player.oxygen) + "/" + Mathf.RoundToInt(player.maxOxygen);
     }
 }
