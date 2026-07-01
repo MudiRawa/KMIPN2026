@@ -1537,7 +1537,7 @@ MonoBehaviour:
   spawnInterval: 3
   maxFishAlive: 15
   rareFishChance: 0.2
-  areaCenter: {fileID: 2007919163}
+  areaCenter: {fileID: 964917790}
   areaSize: {x: 40, y: 17}
   fishWaterArea: {fileID: 964917791}
 --- !u!4 &459027576
