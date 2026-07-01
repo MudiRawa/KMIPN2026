@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class Fish : MonoBehaviour
 {
+    [Header("Fish Info")]
+    public FishData fishData;
+
     [Header("Movement")]
     public float moveSpeed = 2f;
 
@@ -98,25 +101,22 @@ public class Fish : MonoBehaviour
 
     void CheckFear()
     {
-        GameObject playerObj = GameObject.FindGameObjectWithTag("Spear");
-        if (playerObj != null)
-        {
-            player = playerObj.transform;
-        }
-        if (player == null)
-            return;
+        if (Spear.instance == null)
+        return;
+
+        player = Spear.instance.transform;
 
         float distance = Vector2.Distance(
             transform.position,
             player.position
         );
 
-        // jika player dekat ikan
-        if (distance <= detectDistance)
+        if (distance <= detectDistance && !isPanicking)
         {
             StartCoroutine(Panic());
         }
     }
+
 
     IEnumerator Panic()
     {
@@ -161,6 +161,7 @@ public class Fish : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
 
         inventory.AddFish();
+        BestiaryManager.instance.RegisterFish(fishData);
 
         StartCoroutine(
             AttachToSpear(collision.transform)

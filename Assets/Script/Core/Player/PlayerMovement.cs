@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
         normalGravityScale = rb.gravityScale;
         originalScale = transform.localScale;
         instance = this;
-        oxygen = maxOxygen;
+        LoadOxygenUpgrade();
     }
 
     void Update()
@@ -264,4 +264,27 @@ public class PlayerMovement : MonoBehaviour
             );
         }
     }
+
+    void LoadOxygenUpgrade()
+    {
+        // Data oxygen tiap level
+        float[] oxygenLevels =
+        {
+            100f,
+            120f,
+            150f,
+            180f,
+            250f
+        };
+
+        int level = PlayerPrefs.GetInt("OxygenLevel", 0);
+
+        // Biar aman
+        level = Mathf.Clamp(level, 0, oxygenLevels.Length - 1);
+
+        maxOxygen = oxygenLevels[level];
+
+        oxygen = maxOxygen;
+    }
+
 }

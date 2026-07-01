@@ -7,8 +7,11 @@ public class CoinUI : MonoBehaviour
 
     private int currentCoins;
 
+    public static CoinUI instance;
+
     void Start()
     {
+        instance = this;
         currentCoins = PlayerPrefs.GetInt("CoinCount", 0);
         UpdateCoinUI();
     }
@@ -23,7 +26,7 @@ public class CoinUI : MonoBehaviour
         UpdateCoinUI();
     }
 
-    void UpdateCoinUI()
+    public void UpdateCoinUI()
     {
         CoinText.text = "Coins: " + currentCoins.ToString();
     }

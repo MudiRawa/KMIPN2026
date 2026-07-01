@@ -106,6 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b24761ad362c9545aa37cdf36597169, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Fish
+  fishData: {fileID: 11400000, guid: 21e32dc3aaee774418d117f0d755fa8d, type: 2}
   moveSpeed: 2
   minChangeTime: 0.5
   maxChangeTime: 5
