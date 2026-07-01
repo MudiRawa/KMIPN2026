@@ -38,9 +38,6 @@ public class PlayerShoot : MonoBehaviour
         if (gunPoint == null || mainCamera == null)
             return;
 
-        // Project the mouse position onto a plane that passes through the gun point
-        // and is oriented parallel to the camera view. This ensures we only aim
-        // in X and Y (screen space) while working in a 3D world.
         Plane plane = new Plane(mainCamera.transform.forward, gunPoint.position);
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         float enter;
