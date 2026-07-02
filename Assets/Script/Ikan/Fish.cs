@@ -160,7 +160,7 @@ public class Fish : MonoBehaviour
 
         rb.linearVelocity = Vector2.zero;
 
-        inventory.AddFish();
+        inventory.AddFish(fishData);
         BestiaryManager.instance.RegisterFish(fishData);
 
         StartCoroutine(

@@ -16,5 +16,5 @@ MonoBehaviour:
   fishName: Kerapu
   description: 
   icon: {fileID: 1505981600070815537, guid: ac73962d6a158fd4080b4f9e4e68564a, type: 3}
-  sellPrice: 0
+  sellPrice: 50
   isRare: 0

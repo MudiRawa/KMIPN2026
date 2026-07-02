@@ -46,19 +46,13 @@ public class BestiaryUI : MonoBehaviour
     {
         foreach (FishSlot slot in fishSlots)
         {
-            bool discovered =
-                BestiaryManager.instance
-                .IsDiscovered(slot.fishData);
+            bool discovered = BestiaryManager.instance.IsDiscovered(slot.fishData);
 
             if (discovered)
             {
-                slot.image.sprite =
-                    slot.fishData.icon;
-
+                slot.image.sprite = slot.fishData.icon;
                 slot.button.interactable = true;
-
                 slot.button.onClick.RemoveAllListeners();
-
                 slot.button.onClick.AddListener(() =>
                 {
                     ShowDetail(slot.fishData);

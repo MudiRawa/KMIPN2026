@@ -111,6 +111,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -119,11 +132,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 61
+        y: 90
         width: 256
-        height: 131
+        height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -141,11 +154,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 272
-        y: 61
+        y: 90
         width: 241
-        height: 131
+        height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,11 +176,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 525
-        y: 61
+        y: 90
         width: 244
-        height: 131
+        height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -185,11 +198,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 769
-        y: 61
+        y: 90
         width: 256
-        height: 131
+        height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -207,11 +220,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1040
-        y: 61
+        y: 90
         width: 241
-        height: 131
+        height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -229,11 +242,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1293
-        y: 61
+        y: 90
         width: 243
-        height: 131
+        height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -250,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d946f1fa0ed8155498426332314cf3e8
     internalID: 0
     vertices: []
     indices: 

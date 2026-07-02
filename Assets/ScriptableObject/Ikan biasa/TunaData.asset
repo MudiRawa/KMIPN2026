@@ -16,5 +16,5 @@ MonoBehaviour:
   fishName: Tuna
   description: 
   icon: {fileID: 1271661819729597233, guid: 5fc94a7c001c8fb4ea684527a4e7af67, type: 3}
-  sellPrice: 0
+  sellPrice: 50
   isRare: 0

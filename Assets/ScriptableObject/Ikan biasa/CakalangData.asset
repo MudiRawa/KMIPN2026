@@ -16,5 +16,5 @@ MonoBehaviour:
   fishName: Cakalang
   description: 
   icon: {fileID: -6744330825280340458, guid: 239e84b4b91ede541957c14eada969f7, type: 3}
-  sellPrice: 0
+  sellPrice: 50
   isRare: 0

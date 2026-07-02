@@ -30,6 +30,6 @@ public class OxygenUI : MonoBehaviour
         }
 
         oxygenSlider.value = player.oxygen;
-        oxygenText.text = Mathf.RoundToInt(player.oxygen) + "/" + Mathf.RoundToInt(player.maxOxygen);
+        oxygenText.text = Mathf.RoundToInt(player.oxygen).ToString();
     }
 }

@@ -1,12 +1,21 @@
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
 public class InventoryUI : MonoBehaviour
 {
     public TextMeshProUGUI inventoryText;
 
+    void OnEnable()
+    {
+        if (Inventory.instance != null)
+        {
+            UpdateInventoryUI(Inventory.instance.fishCount);
+        }
+    }
+
     public void UpdateInventoryUI(int fishCount)
     {
-        inventoryText.text = "total ikan: " + fishCount.ToString() + " / 10";
+        inventoryText.text = "Total ikan: " + fishCount + " / 10";
     }
+
 }

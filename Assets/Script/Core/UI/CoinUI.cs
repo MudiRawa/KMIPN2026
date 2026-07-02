@@ -1,33 +1,17 @@
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
 public class CoinUI : MonoBehaviour
 {
-    public TextMeshProUGUI CoinText;
-
-    private int currentCoins;
-
-    public static CoinUI instance;
+    public TextMeshProUGUI coinText;
 
     void Start()
     {
-        instance = this;
-        currentCoins = PlayerPrefs.GetInt("CoinCount", 0);
-        UpdateCoinUI();
+        CoinManager.instance.UpdateCoinUI();
     }
 
-    public void AddCoins(int amount)
+    public void UpdateCoinText(int coins)
     {
-        currentCoins += amount;
-
-        PlayerPrefs.SetInt("CoinCount", currentCoins);
-        PlayerPrefs.Save();
-
-        UpdateCoinUI();
-    }
-
-    public void UpdateCoinUI()
-    {
-        CoinText.text = "Coins: " + currentCoins.ToString();
+        coinText.text = coins.ToString();
     }
 }

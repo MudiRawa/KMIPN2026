@@ -1,22 +1,38 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Shop : MonoBehaviour
 {
-    public GameObject textE, dialog;
-    private bool playerInTrigger = false, isShopOpen = false;
+    public GameObject textE;
+    public GameObject panelJual;
+
+    private bool playerInTrigger = false;
+    private bool isShopOpen = false;
+
     private PlayerInput playerInput;
+
+    [Header("Shop UI")]
+    public Transform slotParent;
+
+    public GameObject slotPrefab;
 
     void Start()
     {
-        playerInput = FindAnyObjectByType<PlayerInput>();
+        playerInput =
+            FindAnyObjectByType<PlayerInput>();
     }
 
     void Update()
     {
-        if (playerInTrigger && playerInput != null)
+        if (playerInTrigger &&
+            playerInput != null)
         {
-            if (playerInput.actions["Interact"].WasPressedThisFrame())
+            if (
+                playerInput
+                .actions["Interact"]
+                .WasPressedThisFrame()
+            )
             {
                 Interact();
             }
@@ -25,66 +41,152 @@ public class Shop : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if(other.CompareTag("Player") && !isShopOpen)
+        if (
+            other.CompareTag("Player") &&
+            !isShopOpen
+        )
         {
             playerInTrigger = true;
+
             textE.SetActive(true);
         }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             playerInTrigger = false;
+
             textE.SetActive(false);
         }
     }
 
-    private void Interact()
+    void Interact()
     {
         if (!isShopOpen)
         {
-            textE.gameObject.SetActive(false);
+            textE.SetActive(false);
+
             isShopOpen = true;
-            Debug.Log("Shop opened!");
-            dialog.SetActive(true);
-            PlayerMovement.instance.DisableMovement();
+
+            panelJual.SetActive(true);
+
+            PlayerMovement.instance
+                .DisableMovement();
+
+            RefreshShop();
         }
     }
 
-    public void sellFish()
+    void RefreshShop()
     {
-        Inventory inventory = FindAnyObjectByType<Inventory>();
+        // INVENTORY SINGLETON
+        Inventory inventory =
+            Inventory.instance;
+
+        if (inventory == null)
+        {
+            Debug.LogError(
+                "Inventory NULL!"
+            );
+
+            return;
+        }
+
+        // hapus slot lama
+        foreach (Transform child
+            in slotParent)
+        {
+            Destroy(child.gameObject);
+        }
+
+        // buat slot baru
+        foreach (
+            FishInventoryItem fishItem
+            in inventory.fishes
+        )
+        {
+            // safety check
+            if (
+                fishItem == null ||
+                fishItem.fishData == null
+            )
+            {
+                Debug.LogError(
+                    "Fish item NULL!"
+                );
+
+                continue;
+            }
+
+            GameObject obj =
+                Instantiate(
+                    slotPrefab,
+                    slotParent
+                );
+
+            ShopSlotUI slotUI =
+                obj.GetComponent<ShopSlotUI>();
+
+            if (slotUI == null)
+            {
+                Debug.LogError(
+                    "ShopSlotUI tidak ada di prefab!"
+                );
+
+                continue;
+            }
+
+            slotUI.Setup(fishItem);
+        }
+    }
+
+    public void SellFish()
+    {
+        Inventory inventory = Inventory.instance;
+
         InventoryUI inventoryUI = FindAnyObjectByType<InventoryUI>();
-        CoinUI coinUI = FindAnyObjectByType<CoinUI>();
 
-        if (inventory != null && inventory.fishCount > 0)
+        int totalCoins = 0;
+
+        List<FishInventoryItem> fishesToRemove = new List<FishInventoryItem>();
+
+        foreach (Transform child in slotParent)
         {
-            int fishToSell = inventory.fishCount;
+            ShopSlotUI slot = child.GetComponent<ShopSlotUI>();
 
-            int earnedCoins = fishToSell * 100;
+            if (slot != null && slot.selected)
+            {
+                totalCoins += slot.fishData.sellPrice;
+                fishesToRemove.Add(slot.fishItem);
+            }
+        }
 
-            // Tambahkan coin, bukan replace
-            coinUI.AddCoins(earnedCoins);
+        // hapus ikan
+        foreach (FishInventoryItem fish in fishesToRemove)
+        {
+            inventory.RemoveFish(fish);
+        }
 
-            inventory.fishCount = 0;
+        // tambah coin
+        CoinManager.instance.AddCoins(totalCoins);
 
+        // refresh UI
+        if (inventoryUI != null)
+        {
             inventoryUI.UpdateInventoryUI(inventory.fishCount);
-
-            Debug.Log("Sold " + fishToSell + " fish!");
-
-            PlayerPrefs.SetInt("FishCount", inventory.fishCount);
-            PlayerPrefs.Save();
         }
-        else
-        {
-            Debug.Log("No fish to sell!");
-        }
+
+        RefreshShop();
     }
 
     public void CloseShop()
     {
         isShopOpen = false;
+
+        panelJual.SetActive(false);
+
+        PlayerMovement.instance.EnableMovement();
     }
 }
