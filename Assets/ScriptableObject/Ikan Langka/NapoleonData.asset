@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FishData
   fishID: napoleon
   fishName: Napoleon
-  description: 
+  description: 'The largest and most majestic species within the Labridae family,
+    recognizable by its prominent forehead bump. Fun Fact: They are protogynous hermaphrodites,
+    meaning they are born female and have the biological ability to change sex to
+    male as they grow to lead their school.'
   icon: {fileID: 5034483824970465845, guid: e85e15243a88c7d49a454c595b8c4bd8, type: 3}
   sellPrice: 0
   isRare: 1

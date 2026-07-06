@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: KerapuData
   m_EditorClassIdentifier: Assembly-CSharp::FishData
   fishID: kerapu
-  fishName: Kerapu
-  description: 
+  fishName: Grouper
+  description: 'A stocky, territorial ambush predator that prefers lurking in crevices.
+    Fun Fact: They possess remarkable spatial intelligence, allowing them to precisely
+    navigate back to their own specific "home" shelter after foraging in the vast
+    reef.'
   icon: {fileID: 1505981600070815537, guid: ac73962d6a158fd4080b4f9e4e68564a, type: 3}
   sellPrice: 50
   isRare: 0

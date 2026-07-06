@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FishData
   fishID: tuna
   fishName: Tuna
-  description: 
+  description: 'Known as the "athletes of the ocean," these pelagic fish possess
+    incredible stamina and hydrodynamic bodies. Fun Fact: They are legendary long-distance
+    travelers, capable of undertaking massive transoceanic migrations between their
+    tropical spawning grounds and cooler temperate feeding zone'
   icon: {fileID: 1271661819729597233, guid: 5fc94a7c001c8fb4ea684527a4e7af67, type: 3}
   sellPrice: 50
   isRare: 0

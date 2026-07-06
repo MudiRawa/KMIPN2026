@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: CakalangData
   m_EditorClassIdentifier: Assembly-CSharp::FishData
   fishID: cakalang
-  fishName: Cakalang
-  description: 
+  fishName: Skipjack Tuna
+  description: 'An active, schooling fish of significant commercial importance. Fun
+    Fact: They display a unique habit of gathering beneath floating debris, logs,
+    or artificial Fish Aggregating Devices (FADs) while out in the open ocean.'
   icon: {fileID: -6744330825280340458, guid: 239e84b4b91ede541957c14eada969f7, type: 3}
   sellPrice: 50
   isRare: 0

@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: KakaktuaData
   m_EditorClassIdentifier: Assembly-CSharp::FishData
   fishID: kakaktua
-  fishName: Kakak Tua
-  description: 
+  fishName: Parrotfish
+  description: 'A vital herbivore that cleans algae from reefs and produces white
+    sand as a byproduct. Fun Fact: Each night, they secrete a protective mucus "sleeping
+    sac" that acts as a cocoon to mask their scent from nocturnal predators like
+    moray eels.'
   icon: {fileID: 6967125321413054958, guid: 33aff10eba76b9142bb12702109c479a, type: 3}
   sellPrice: 0
   isRare: 1
