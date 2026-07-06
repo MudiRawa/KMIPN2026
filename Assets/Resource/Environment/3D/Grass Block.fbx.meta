@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Batu Lumut
-    second: {fileID: 2800000, guid: 5292d706574c6b94db027be7970e9a48, type: 3}
+    second: {fileID: 2800000, guid: 4a2eb694858dd3341ae700273af2b177, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

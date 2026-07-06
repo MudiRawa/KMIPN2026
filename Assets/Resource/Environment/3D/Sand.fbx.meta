@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Batu Karang
-    second: {fileID: 2800000, guid: 8882d56dc117f2d4a893231de9bb60fe, type: 3}
+    second: {fileID: 2800000, guid: 9ac73846cc45e2042a5a71bfdc9361e7, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

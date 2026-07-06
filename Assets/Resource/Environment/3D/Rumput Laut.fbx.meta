@@ -1,14 +1,19 @@
 fileFormatVersion: 2
-guid: b17ffaefd3cba384f9321afafebc2468
+guid: bb3777cca02c2bf49b93108983bc83bf
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rumput Laut 1
+    second: {fileID: 2100000, guid: 8d97913309871524eb3665b0d3eecca2, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: Batu Karang
-    second: {fileID: 2800000, guid: d8bf8e6fa4936fb4f9b0e49f96273477, type: 3}
+      name: Rumput Laut 1
+    second: {fileID: 2800000, guid: ca441cb825062e9479dba1f6c97037ab, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

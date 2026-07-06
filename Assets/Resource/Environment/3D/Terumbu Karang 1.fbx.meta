@@ -5,10 +5,15 @@ ModelImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: terumbu karang 1
+    second: {fileID: 2100000, guid: 6a120c4262ca088408f6cb62d70a7a98, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: terumbu karang 1
-    second: {fileID: 2800000, guid: 604ff2b1c41374d49bd81b1af7a00eff, type: 3}
+    second: {fileID: 2800000, guid: bd739027d0e25154eb7c8c489a9d910b, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

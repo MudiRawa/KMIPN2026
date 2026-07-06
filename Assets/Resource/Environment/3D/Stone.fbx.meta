@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: 'Batu '
-    second: {fileID: 2800000, guid: 7c28057e9fa94bd4dad1e06cbd799c5e, type: 3}
+    second: {fileID: 2800000, guid: e3f55b010f47d404da3ced08cf8f1c9c, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

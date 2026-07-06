@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: 3afe0fe7753531146a18487b495a943e
+guid: dfa016402d2463a428223ecd7c6b246e
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Rumput Laut 1
-    second: {fileID: 2800000, guid: 23cd2c1a8f39dc844b0f87f1cb011a0c, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
