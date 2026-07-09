@@ -19,5 +19,5 @@ MonoBehaviour:
     as they mature, creating a graceful, flowing motion that makes them one of the
     most iconic sights underwater.'
   icon: {fileID: 1923639669800802944, guid: 388c9c49334512944b5adb5fd6a16386, type: 3}
-  sellPrice: 0
+  sellPrice: 25
   isRare: 1

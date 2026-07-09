@@ -18,5 +18,5 @@ MonoBehaviour:
     They are notorious for being attracted to reflective surfaces, often confusing
     shiny jewelry or watches for the scales of prey.'
   icon: {fileID: -6090330437529350319, guid: 41ff6c8421baea14e8b53b783e8af1e9, type: 3}
-  sellPrice: 50
+  sellPrice: 15
   isRare: 0

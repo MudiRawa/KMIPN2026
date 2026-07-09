@@ -19,5 +19,5 @@ MonoBehaviour:
     sac" that acts as a cocoon to mask their scent from nocturnal predators like
     moray eels.'
   icon: {fileID: 6967125321413054958, guid: 33aff10eba76b9142bb12702109c479a, type: 3}
-  sellPrice: 0
+  sellPrice: 45
   isRare: 1

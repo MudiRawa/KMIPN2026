@@ -1,19 +1,31 @@
 using UnityEngine;
 using TMPro;
 
-public class OxygenUpgrade : MonoBehaviour
+public class InventoryUpgrade : MonoBehaviour
 {
-    [Header("Upgrade Data")]
+    [Header("Upgrade Cost")]
     public int[] upgradeCosts =
     {
+        15,
+        30,
+        60,
+        120
+    };
+
+    [Header("Inventory Size")]
+    public int[] inventorySizes =
+    {
         10,
-        25,
-        50,
-        100
+        15,
+        20,
+        30,
+        40
     };
 
     [Header("UI")]
     public TextMeshProUGUI levelText;
+
+    public TextMeshProUGUI capacityText;
 
     public TextMeshProUGUI costText;
 
@@ -23,22 +35,21 @@ public class OxygenUpgrade : MonoBehaviour
     {
         currentLevel =
             PlayerPrefs.GetInt(
-                "OxygenLevel",
+                "InventoryLevel",
                 0
             );
 
         UpdateUI();
     }
 
-    public void UpgradeOxygen()
+    public void UpgradeInventory()
     {
-        // MAX LEVEL?
         if (
             currentLevel >=
             upgradeCosts.Length
         )
         {
-            Debug.Log("Upgrade MAX");
+            Debug.Log("Inventory MAX");
 
             return;
         }
@@ -46,28 +57,31 @@ public class OxygenUpgrade : MonoBehaviour
         int cost =
             upgradeCosts[currentLevel];
 
-        // AMBIL COIN DARI COIN MANAGER
-        int coins =
-            CoinManager.instance.coins;
-
-        if (coins >= cost)
+        if (
+            CoinManager.instance.coins >= cost
+        )
         {
-            // KURANGI COIN
             CoinManager.instance.RemoveCoins(cost);
 
             currentLevel++;
 
             PlayerPrefs.SetInt(
-                "OxygenLevel",
+                "InventoryLevel",
                 currentLevel
             );
 
             PlayerPrefs.Save();
 
+            // langsung update inventory yang sedang dipakai
+            Inventory.instance.maxFish =
+                inventorySizes[currentLevel];
+
+            Inventory.instance.RefreshUI();
+
             UpdateUI();
 
             Debug.Log(
-                "Upgrade berhasil"
+                "Inventory berhasil diupgrade"
             );
         }
         else
@@ -83,8 +97,15 @@ public class OxygenUpgrade : MonoBehaviour
         if (levelText != null)
         {
             levelText.text =
-                "Oxygen Lv. " +
+                "Inventory Lv. " +
                 currentLevel;
+        }
+
+        if (capacityText != null)
+        {
+            capacityText.text =
+                inventorySizes[currentLevel] +
+                " Fish";
         }
 
         if (costText != null)
@@ -98,11 +119,7 @@ public class OxygenUpgrade : MonoBehaviour
             }
             else
             {
-                costText.text =
-                    "Cost : " +
-                    upgradeCosts[
-                        currentLevel
-                    ];
+                costText.text = upgradeCosts[currentLevel].ToString();
             }
         }
     }

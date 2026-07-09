@@ -15,6 +15,7 @@ public class GoUp : MonoBehaviour
     {
         if (collision.collider.CompareTag("Player"))
         {
+            PlayerMovement.instance.DisableMovement();
             PlayerShoot.instance.isShooting = true;
             PanelUp.SetActive(true);
         }
@@ -30,6 +31,7 @@ public class GoUp : MonoBehaviour
     {
         PanelUp.SetActive(false);
         PlayerShoot.instance.isShooting = false;
+        PlayerMovement.instance.EnableMovement();
     }
 
     IEnumerator Wait(int time)

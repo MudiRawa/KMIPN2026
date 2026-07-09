@@ -101,8 +101,7 @@ public class PlayerMovement : MonoBehaviour
             if (oxygen <= 0f)
             {
                 oxygen = 0f;
-                PlayerPrefs.SetInt("FishCount", 0);
-                PlayerPrefs.Save();
+                Inventory.instance.ClearInventory();
                 Mati.instance.mati();
             }
         }

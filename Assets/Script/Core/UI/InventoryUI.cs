@@ -15,7 +15,7 @@ public class InventoryUI : MonoBehaviour
 
     public void UpdateInventoryUI(int fishCount)
     {
-        inventoryText.text = "Fish: " + fishCount + " / 10";
+        inventoryText.text = "Fish: " + fishCount + " / " + Inventory.instance.maxFish;
     }
 
 }

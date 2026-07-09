@@ -29,6 +29,7 @@ public class Inventory : MonoBehaviour
 
     void Start()
     {
+        LoadInventoryUpgrade();
         LoadInventory();
     }
 
@@ -62,6 +63,17 @@ public class Inventory : MonoBehaviour
         fishCount--;
         SaveInventory();
         RefreshUI();
+    }
+
+    public void ClearInventory()
+    {
+        fishes.Clear();
+        fishCount = 0;
+
+        SaveInventory();
+        RefreshUI();
+
+        Debug.Log("Inventory dikosongkan");
     }
 
     // UPDATE UI
@@ -147,6 +159,24 @@ public class Inventory : MonoBehaviour
                 fishes.Add(item);
             }
         }
+    }
+
+    void LoadInventoryUpgrade()
+    {
+        int[] inventorySizes =
+        {
+            10,
+            15,
+            20,
+            30,
+            40
+        };
+
+        int level = PlayerPrefs.GetInt("InventoryLevel", 0);
+
+        level = Mathf.Clamp(level, 0, inventorySizes.Length - 1);
+
+        maxFish = inventorySizes[level];
     }
 
 }
