@@ -8378,7 +8378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5af97bdbd46b1ed41b8ed5f5849fb8af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OxygenUpgrade
-  upgradeCosts: 64000000fa000000f4010000e8030000
+  upgradeCosts: c8000000fa000000f4010000e8030000
   levelText: {fileID: 706757603}
   costText: {fileID: 1179050916}
 --- !u!4 &1593852044
@@ -8408,7 +8408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a44ea3d600dc05041bd77ae047607806, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventoryUpgrade
-  upgradeCosts: 64000000fa000000f4010000e8030000
+  upgradeCosts: c8000000fa000000f4010000e8030000
   inventorySizes: 0a0000000f000000140000001e00000028000000
   levelText: {fileID: 387388396}
   capacityText: {fileID: 0}
