@@ -39,6 +39,8 @@ public class PlayerMovement : MonoBehaviour
     enum PlayerState { Idle = 0, Walk = 1, Swim = 2 }
     readonly int animStateHash = Animator.StringToHash("State");
 
+    PlayerState state = PlayerState.Idle;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -70,21 +72,20 @@ public class PlayerMovement : MonoBehaviour
             GroundMove();
         }
 
-        UpdateFacingDirection();
         UpdateAnimation();
+        UpdateFacingDirection();
     }
 
     void UpdateAnimation()
     {
         if (animator == null) return;
-
-        PlayerState state = PlayerState.Idle;
-
+    
+        state = PlayerState.Idle;
         if (isUnderwater)
         {
             state = PlayerState.Swim;
         }
-        else if (Mathf.Abs(moveInput.x) > 0.1f)
+        else if (Mathf.Abs(moveInput.x) > 0.01f)
         {
             state = PlayerState.Walk;
         }

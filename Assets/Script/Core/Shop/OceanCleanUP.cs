@@ -58,7 +58,7 @@ public class OceanCleanUP : MonoBehaviour
     {
         if (levelText != null)
         {
-            levelText.text = "Ocean CleanUp Lv. " + currentLevel;
+            levelText.text = "Ocean CleanUp Lv. " + (currentLevel + 1);
         }
 
         if (costText != null)

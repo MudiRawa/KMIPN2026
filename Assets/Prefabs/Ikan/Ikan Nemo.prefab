@@ -159,7 +159,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.27, y: 1.9}
+    oldSize: {x: 1.25, y: 1.88}
     newSize: {x: 1.27, y: 1.9}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -232,3 +232,8 @@ MonoBehaviour:
   detectDistance: 3
   panicSpeed: 5
   panicDuration: 2
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  obstacleCheckDistance: 1
+  obstacleRadius: 0.5

@@ -115,6 +115,11 @@ MonoBehaviour:
   detectDistance: 4
   panicSpeed: 5
   panicDuration: 2
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  obstacleCheckDistance: 1
+  obstacleRadius: 0.5
 --- !u!50 &1199464359360729470
 Rigidbody2D:
   serializedVersion: 5

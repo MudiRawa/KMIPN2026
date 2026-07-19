@@ -1,10 +1,15 @@
 using UnityEngine;
 
+[System.Serializable]
+public class OceanFishLevel
+{
+    public GameObject[] normalFish;
+    public GameObject[] rareFish;
+}
 public class FishSpawner : MonoBehaviour
 {
-    [Header("Fish Prefabs")]
-    public GameObject[] normalFishPrefabs;
-    public GameObject[] rareFishPrefabs;
+    [Header("Fish Berdasarkan Ocean Level")]
+    public OceanFishLevel[] fishByLevel;
 
     [Header("Spawn Settings")]
     public float spawnInterval = 3f;
@@ -16,6 +21,14 @@ public class FishSpawner : MonoBehaviour
     public Transform areaCenter;
     public Vector2 areaSize = new Vector2(10f, 5f);
     public Collider2D fishWaterArea;
+
+    [Header("Obstacle Check")]
+    public LayerMask obstacleLayer;
+    public float spawnCheckRadius = 0.3f;
+    public int maxSpawnAttempts = 30;
+
+    [Header("Ocean Level")]
+    public string oceanLevelKey = "oceanCleanUp";
 
     float spawnTimer;
 
@@ -48,6 +61,12 @@ public class FishSpawner : MonoBehaviour
         }
 
         Vector3 spawnPosition = GetRandomSpawnPosition();
+
+        if (Physics2D.OverlapCircle(spawnPosition, spawnCheckRadius, obstacleLayer))
+        {
+            Debug.LogWarning("Tidak menemukan posisi spawn yang aman.");
+            return;
+        }
         GameObject fishObject = Instantiate(prefab, spawnPosition, Quaternion.identity);
 
         Fish fishComponent = fishObject.GetComponent<Fish>();
@@ -59,21 +78,39 @@ public class FishSpawner : MonoBehaviour
 
     GameObject ChooseFishPrefab()
     {
-        bool spawnRare = Random.value < rareFishChance && rareFishPrefabs.Length > 0;
+        int oceanLevel = PlayerPrefs.GetInt(oceanLevelKey, 0);
+
+        oceanLevel = Mathf.Clamp(
+            oceanLevel,
+            0,
+            fishByLevel.Length - 1
+        );
+
+        OceanFishLevel levelFish = fishByLevel[oceanLevel];
+
+        bool spawnRare =
+            Random.value < rareFishChance &&
+            levelFish.rareFish.Length > 0;
 
         if (spawnRare)
         {
-            return rareFishPrefabs[Random.Range(0, rareFishPrefabs.Length)];
+            return levelFish.rareFish[
+                Random.Range(0, levelFish.rareFish.Length)
+            ];
         }
 
-        if (normalFishPrefabs.Length > 0)
+        if (levelFish.normalFish.Length > 0)
         {
-            return normalFishPrefabs[Random.Range(0, normalFishPrefabs.Length)];
+            return levelFish.normalFish[
+                Random.Range(0, levelFish.normalFish.Length)
+            ];
         }
 
-        if (rareFishPrefabs.Length > 0)
+        if (levelFish.rareFish.Length > 0)
         {
-            return rareFishPrefabs[Random.Range(0, rareFishPrefabs.Length)];
+            return levelFish.rareFish[
+                Random.Range(0, levelFish.rareFish.Length)
+            ];
         }
 
         return null;
@@ -82,9 +119,23 @@ public class FishSpawner : MonoBehaviour
     Vector3 GetRandomSpawnPosition()
     {
         Vector3 center = areaCenter != null ? areaCenter.position : transform.position;
-        float x = center.x + Random.Range(-areaSize.x * 0.5f, areaSize.x * 0.5f);
-        float y = center.y + Random.Range(-areaSize.y * 0.5f, areaSize.y * 0.5f);
-        return new Vector3(x, y, center.z);
+
+        for (int i = 0; i < maxSpawnAttempts; i++)
+        {
+            float x = center.x + Random.Range(-areaSize.x * 0.5f, areaSize.x * 0.5f);
+            float y = center.y + Random.Range(-areaSize.y * 0.5f, areaSize.y * 0.5f);
+
+            Vector2 spawnPos = new Vector2(x, y);
+
+            // Cek apakah posisi mengenai obstacle
+            if (!Physics2D.OverlapCircle(spawnPos, spawnCheckRadius, obstacleLayer))
+            {
+                return new Vector3(x, y, center.z);
+            }
+        }
+
+        // Kalau gagal setelah beberapa kali percobaan
+        return center;
     }
 
     int CountActiveFish()

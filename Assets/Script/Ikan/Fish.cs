@@ -21,6 +21,11 @@ public class Fish : MonoBehaviour
     public float panicSpeed = 5f;
     public float panicDuration = 2f;
 
+    [Header("Obstacle Avoidance")]
+    public LayerMask obstacleLayer;
+    public float obstacleCheckDistance = 1f;
+    public float obstacleRadius = 0.5f;
+
     Vector2 moveDirection;
 
     bool isCaught = false;
@@ -54,6 +59,8 @@ public class Fish : MonoBehaviour
     {
         if (isCaught)
             return;
+
+        AvoidObstacle();
 
         float currentSpeed = isPanicking ? panicSpeed : moveSpeed;
 
@@ -142,32 +149,48 @@ public class Fish : MonoBehaviour
         {
             Vector2 center = waterArea.bounds.center;
 
-            moveDirection =
-                (center - (Vector2)transform.position).normalized;
+            moveDirection = (center - (Vector2)transform.position).normalized;
+        }
+    }
+
+    void AvoidObstacle()
+    {
+        RaycastHit2D hit = Physics2D.CircleCast(
+            transform.position,
+            obstacleRadius,
+            moveDirection,
+            obstacleCheckDistance,
+            obstacleLayer
+        );
+
+        if (hit.collider != null)
+        {
+            // Cari arah baru
+            moveDirection = Vector2.Reflect(moveDirection, hit.normal).normalized;
         }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
-{
-    if (isCaught)
-        return;
-    if (collision.CompareTag("Spear") &&
-        Spear.instance.IsReturning == false)
     {
-        Debug.Log("Ikan tertangkap!");
+        if (isCaught)
+            return;
+        if (collision.CompareTag("Spear") &&
+            Spear.instance.IsReturning == false)
+        {
+            Debug.Log("Ikan tertangkap!");
 
-        isCaught = true;
+            isCaught = true;
 
-        rb.linearVelocity = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
 
-        inventory.AddFish(fishData);
-        BestiaryManager.instance.RegisterFish(fishData);
+            inventory.AddFish(fishData);
+            BestiaryManager.instance.RegisterFish(fishData);
 
-        StartCoroutine(
-            AttachToSpear(collision.transform)
-        );
+            StartCoroutine(
+                AttachToSpear(collision.transform)
+            );
+        }
     }
-}
 
     IEnumerator AttachToSpear(Transform spear)
     {
@@ -179,6 +202,7 @@ public class Fish : MonoBehaviour
 
     void OnDrawGizmosSelected()
     {
+        
         // Area air
         if (waterArea != null)
         {
@@ -196,6 +220,13 @@ public class Fish : MonoBehaviour
         Gizmos.DrawWireSphere(
             transform.position,
             detectDistance
+        );
+
+        Gizmos.color = Color.yellow;
+
+        Gizmos.DrawWireSphere(
+            transform.position + (Vector3)(moveDirection * obstacleCheckDistance),
+            obstacleRadius
         );
     }
 }

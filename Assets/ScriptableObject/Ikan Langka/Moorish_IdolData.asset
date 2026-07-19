@@ -18,6 +18,6 @@ MonoBehaviour:
     tropical reefs. Fun Fact: Their long, whip-like dorsal filament grows significantly
     as they mature, creating a graceful, flowing motion that makes them one of the
     most iconic sights underwater.'
-  icon: {fileID: 1923639669800802944, guid: 388c9c49334512944b5adb5fd6a16386, type: 3}
+  icon: {fileID: 1923639669800802944, guid: 5d894ab2d8880864a82be8d5eae5e7be, type: 3}
   sellPrice: 25
   isRare: 1

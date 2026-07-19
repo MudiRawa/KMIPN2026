@@ -266,3 +266,8 @@ MonoBehaviour:
   detectDistance: 4
   panicSpeed: 5
   panicDuration: 2
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  obstacleCheckDistance: 1.5
+  obstacleRadius: 1

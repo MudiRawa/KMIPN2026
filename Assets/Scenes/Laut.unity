@@ -650,6 +650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -724,6 +728,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2b61037d715c6e4a8fec72cf945fae2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -797,6 +805,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1820,6 +1832,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2059,6 +2075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2069,6 +2089,84 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
   m_PrefabInstance: {fileID: 77636966}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &82119821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 82119822}
+  - component: {fileID: 82119823}
+  m_Layer: 6
+  m_Name: WallBawah (7)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &82119822
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82119821}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 40.1, y: -3.84, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 763908722}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &82119823
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82119821}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 7.4533806, y: -3.011856}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 8.659607, y: 6.1539307}
+  m_EdgeRadius: 0
 --- !u!1 &89376447
 GameObject:
   m_ObjectHideFlags: 0
@@ -2389,6 +2487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2554,6 +2656,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2628,6 +2734,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2701,6 +2811,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2849,6 +2963,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3052,7 +3170,7 @@ GameObject:
   m_Component:
   - component: {fileID: 183334065}
   - component: {fileID: 183334066}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (2)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3068,7 +3186,7 @@ Transform:
   m_GameObject: {fileID: 183334064}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 25.07, y: -0.33, z: 0}
+  m_LocalPosition: {x: 24.74, y: -0.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3686,7 +3804,7 @@ Canvas:
   m_GameObject: {fileID: 196342617}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 711403458}
   m_PlaneDistance: 10
   m_PixelPerfect: 0
@@ -3864,6 +3982,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4121,6 +4243,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4141,7 +4267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 243687640}
   - component: {fileID: 243687641}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -4660,6 +4786,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5011,6 +5141,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a2b61037d715c6e4a8fec72cf945fae2, type: 3}
       propertyPath: m_Name
       value: Coral Stone (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2b61037d715c6e4a8fec72cf945fae2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5466,6 +5600,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5486,7 +5624,7 @@ GameObject:
   m_Component:
   - component: {fileID: 337109426}
   - component: {fileID: 337109427}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -6257,6 +6395,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2b61037d715c6e4a8fec72cf945fae2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6330,6 +6472,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6405,6 +6551,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6479,6 +6629,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6499,7 +6653,7 @@ GameObject:
   m_Component:
   - component: {fileID: 421682069}
   - component: {fileID: 421682070}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall Tengah
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -6632,6 +6786,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6798,6 +6956,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6871,6 +7033,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7111,6 +7277,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2b61037d715c6e4a8fec72cf945fae2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7131,6 +7301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 459027576}
   - component: {fileID: 459027575}
+  - component: {fileID: 459027577}
   m_Layer: 0
   m_Name: FishSpawner
   m_TagString: Untagged
@@ -7150,22 +7321,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1daab4bd7ddc5284fa965777c155998d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FishSpawner
-  normalFishPrefabs:
-  - {fileID: 3662942321118648891, guid: cd28806c4ef580e44b29b37f71903880, type: 3}
-  - {fileID: 4749452539799718969, guid: 3ac0988343357e341a36fb81e3c11dc5, type: 3}
-  - {fileID: 6618876610866314877, guid: ddedf1d5dff884046a2eacc3bb460d36, type: 3}
-  - {fileID: 5214935050624605351, guid: affe62525dd0e4b45969fe5a44254cbb, type: 3}
-  rareFishPrefabs:
-  - {fileID: 1239474928869316485, guid: 2661707ccd7a5ac41abfebfb0e64d4f4, type: 3}
-  - {fileID: 1296173394986236660, guid: b9b52caa9447f40429aad7248d8c4869, type: 3}
-  - {fileID: 8382448563717506619, guid: f6102e4cb7c92fa4485e7788b579a506, type: 3}
-  - {fileID: 5915294905715801287, guid: f6d01829cacc84f41a89a629ee5d4fe1, type: 3}
+  fishByLevel:
+  - normalFish:
+    - {fileID: 5214935050624605351, guid: affe62525dd0e4b45969fe5a44254cbb, type: 3}
+    - {fileID: 4749452539799718969, guid: 3ac0988343357e341a36fb81e3c11dc5, type: 3}
+    rareFish:
+    - {fileID: 6618876610866314877, guid: ddedf1d5dff884046a2eacc3bb460d36, type: 3}
+    - {fileID: 3662942321118648891, guid: cd28806c4ef580e44b29b37f71903880, type: 3}
+  - normalFish:
+    - {fileID: 5214935050624605351, guid: affe62525dd0e4b45969fe5a44254cbb, type: 3}
+    - {fileID: 4749452539799718969, guid: 3ac0988343357e341a36fb81e3c11dc5, type: 3}
+    - {fileID: 6618876610866314877, guid: ddedf1d5dff884046a2eacc3bb460d36, type: 3}
+    rareFish:
+    - {fileID: 3662942321118648891, guid: cd28806c4ef580e44b29b37f71903880, type: 3}
+    - {fileID: 1296173394986236660, guid: b9b52caa9447f40429aad7248d8c4869, type: 3}
+  - normalFish:
+    - {fileID: 4749452539799718969, guid: 3ac0988343357e341a36fb81e3c11dc5, type: 3}
+    - {fileID: 5214935050624605351, guid: affe62525dd0e4b45969fe5a44254cbb, type: 3}
+    - {fileID: 6618876610866314877, guid: ddedf1d5dff884046a2eacc3bb460d36, type: 3}
+    - {fileID: 3662942321118648891, guid: cd28806c4ef580e44b29b37f71903880, type: 3}
+    rareFish:
+    - {fileID: 1296173394986236660, guid: b9b52caa9447f40429aad7248d8c4869, type: 3}
+    - {fileID: 8382448563717506619, guid: f6102e4cb7c92fa4485e7788b579a506, type: 3}
+  - normalFish:
+    - {fileID: 4749452539799718969, guid: 3ac0988343357e341a36fb81e3c11dc5, type: 3}
+    - {fileID: 5214935050624605351, guid: affe62525dd0e4b45969fe5a44254cbb, type: 3}
+    - {fileID: 6618876610866314877, guid: ddedf1d5dff884046a2eacc3bb460d36, type: 3}
+    - {fileID: 3662942321118648891, guid: cd28806c4ef580e44b29b37f71903880, type: 3}
+    rareFish:
+    - {fileID: 1296173394986236660, guid: b9b52caa9447f40429aad7248d8c4869, type: 3}
+    - {fileID: 8382448563717506619, guid: f6102e4cb7c92fa4485e7788b579a506, type: 3}
+    - {fileID: 1239474928869316485, guid: 2661707ccd7a5ac41abfebfb0e64d4f4, type: 3}
+  - normalFish:
+    - {fileID: 4749452539799718969, guid: 3ac0988343357e341a36fb81e3c11dc5, type: 3}
+    - {fileID: 5214935050624605351, guid: affe62525dd0e4b45969fe5a44254cbb, type: 3}
+    - {fileID: 6618876610866314877, guid: ddedf1d5dff884046a2eacc3bb460d36, type: 3}
+    - {fileID: 3662942321118648891, guid: cd28806c4ef580e44b29b37f71903880, type: 3}
+    rareFish:
+    - {fileID: 1296173394986236660, guid: b9b52caa9447f40429aad7248d8c4869, type: 3}
+    - {fileID: 8382448563717506619, guid: f6102e4cb7c92fa4485e7788b579a506, type: 3}
+    - {fileID: 1239474928869316485, guid: 2661707ccd7a5ac41abfebfb0e64d4f4, type: 3}
+    - {fileID: 5915294905715801287, guid: f6d01829cacc84f41a89a629ee5d4fe1, type: 3}
   spawnInterval: 3
   maxFishAlive: 15
   rareFishChance: 0.2
   areaCenter: {fileID: 964917790}
   areaSize: {x: 40, y: 17}
   fishWaterArea: {fileID: 964917791}
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  spawnCheckRadius: 0.3
+  maxSpawnAttempts: 30
+  oceanLevelKey: oceanCleanUp
 --- !u!4 &459027576
 Transform:
   m_ObjectHideFlags: 0
@@ -7175,12 +7383,29 @@ Transform:
   m_GameObject: {fileID: 459027574}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.62, y: -8.89, z: 0}
+  m_LocalPosition: {x: 14.6, y: -3.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &459027577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459027574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59766633659eabd47baff16b5d8d324b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BackgroundFishSpawner
+  fishPrefabs:
+  - {fileID: 4547927033305687410, guid: 8ea96fce5120a6645bcb3fbd3f0adeb8, type: 3}
+  spawnInterval: 15
+  areaSize: {x: 100, y: 15}
+  center: {fileID: 459027576}
 --- !u!1001 &459407167
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7409,6 +7634,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7680,6 +7909,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7690,6 +7923,84 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
   m_PrefabInstance: {fileID: 508147956}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &510280696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 510280697}
+  - component: {fileID: 510280698}
+  m_Layer: 6
+  m_Name: WallBawah (2)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &510280697
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510280696}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.63, y: 0.08, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 763908722}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &510280698
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510280696}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -6.953513, y: -3.011856}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 4.8164086, y: 6.1539307}
+  m_EdgeRadius: 0
 --- !u!1001 &517484394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7753,6 +8064,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7827,6 +8142,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8123,6 +8442,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8437,6 +8760,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8602,6 +8929,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8766,6 +9097,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9154,6 +9489,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9227,6 +9566,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9376,6 +9719,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9449,6 +9796,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9524,6 +9875,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9597,6 +9952,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9672,6 +10031,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9745,6 +10108,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9820,6 +10187,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9893,6 +10264,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10009,6 +10384,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 67744036}
+  - {fileID: 1641408696}
   - {fileID: 1200148993}
   m_Father: {fileID: 196342621}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10341,6 +10717,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a2b61037d715c6e4a8fec72cf945fae2, type: 3}
       propertyPath: m_Name
       value: Coral Stone (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2b61037d715c6e4a8fec72cf945fae2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10797,6 +11177,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10911,7 +11295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.847846
+      value: 10.94
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10944,6 +11328,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11019,6 +11407,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11029,6 +11421,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
   m_PrefabInstance: {fileID: 749156903}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &763908720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 763908722}
+  - component: {fileID: 763908721}
+  m_Layer: 6
+  m_Name: WallBawah
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &763908721
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763908720}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -2.5499372, y: -1.7035875}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2.2701817, y: 8.770468}
+  m_EdgeRadius: 0
+--- !u!4 &763908722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763908720}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -25.919998, y: -12.549999, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1593395057}
+  - {fileID: 510280697}
+  - {fileID: 1577808429}
+  - {fileID: 2070067080}
+  - {fileID: 1149924977}
+  - {fileID: 82119822}
+  m_Father: {fileID: 1406642392}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &770483158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11059,7 +11535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.87
+      value: 11.45
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11092,6 +11568,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11258,6 +11738,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11331,6 +11815,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11406,6 +11894,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11480,6 +11972,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11553,6 +12049,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11806,6 +12306,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a2b61037d715c6e4a8fec72cf945fae2, type: 3}
       propertyPath: m_Name
       value: Coral Stone (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2b61037d715c6e4a8fec72cf945fae2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12103,6 +12607,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12182,6 +12690,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12255,6 +12767,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13313,6 +13829,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13535,6 +14055,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13686,6 +14210,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14074,6 +14602,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14205,7 +14737,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.93
+      value: 12.56
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14238,6 +14770,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14403,6 +14939,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14733,6 +15273,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15229,6 +15773,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15302,6 +15850,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15789,6 +16341,84 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1149924976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1149924977}
+  - component: {fileID: 1149924978}
+  m_Layer: 6
+  m_Name: WallBawah (6)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1149924977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149924976}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 45.94, y: 2.59, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 763908722}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1149924978
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149924976}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 7.4533806, y: -3.011856}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 8.659607, y: 6.1539307}
+  m_EdgeRadius: 0
 --- !u!1001 &1163146941
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15852,6 +16482,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15926,6 +16560,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16302,7 +16940,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -127.23809}
+  m_AnchoredPosition: {x: 0, y: -139.9}
   m_SizeDelta: {x: 161.25, y: 62.625}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1200148994
@@ -16463,6 +17101,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16574,7 +17216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1209343782}
   - component: {fileID: 1209343783}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -16590,7 +17232,7 @@ Transform:
   m_GameObject: {fileID: 1209343781}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.37, y: -16.94, z: 0}
+  m_LocalPosition: {x: -0.37, y: -18.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16727,7 +17369,7 @@ GameObject:
   - component: {fileID: 1217817470}
   - component: {fileID: 1217817471}
   - component: {fileID: 1217817472}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: UpWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -16882,120 +17524,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8414128588642398907, guid: 783cd0c6360427d438fd0d4d00976748, type: 3}
   m_PrefabInstance: {fileID: 1217938736}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1222309400
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1222309403}
-  - component: {fileID: 1222309402}
-  - component: {fileID: 1222309401}
-  m_Layer: 0
-  m_Name: siluet ikan_0 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!95 &1222309401
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222309400}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 890d54a67665d884598be4f89bb5e0e2, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!212 &1222309402
-SpriteRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222309400}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: -523589722, guid: b9b2465a1f043c14d9e044a032ce57fa, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.64}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
---- !u!4 &1222309403
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222309400}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.020865588, y: -0.9997823, z: 0.000000011641531, w: 0.0000005662441}
-  m_LocalPosition: {x: 31.1, y: -6.7, z: 22.3}
-  m_LocalScale: {x: 7, y: 7, z: 7}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -180, z: -2.391}
 --- !u!1001 &1226792060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17406,6 +17934,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17782,6 +18314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17855,6 +18391,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17970,7 +18510,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.8
+      value: 11.43
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18003,6 +18543,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18169,6 +18713,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18280,7 +18828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1308983407}
   - component: {fileID: 1308983408}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -18411,6 +18959,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19171,6 +19723,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19244,6 +19800,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19395,7 +19955,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.6
+      value: 9.78
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_LocalRotation.w
@@ -19428,6 +19988,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19576,6 +20140,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19859,7 +20427,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1395301565}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 3D Asset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20018,7 +20586,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1406642392}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20044,6 +20612,7 @@ Transform:
   - {fileID: 183334065}
   - {fileID: 421682069}
   - {fileID: 1469943838}
+  - {fileID: 763908722}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1410101902
@@ -20200,6 +20769,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (69)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20514,6 +21087,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2b61037d715c6e4a8fec72cf945fae2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20662,6 +21239,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20735,6 +21316,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20901,6 +21486,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20921,7 +21510,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1469943838}
   - component: {fileID: 1469943839}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall Tengah (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -21217,6 +21806,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21290,6 +21883,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21456,6 +22053,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21529,6 +22130,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21604,6 +22209,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21677,6 +22286,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21973,6 +22586,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22399,6 +23016,84 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 27.213, y: 1.404, z: 0.642}
+--- !u!1 &1577808428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1577808429}
+  - component: {fileID: 1577808430}
+  m_Layer: 6
+  m_Name: WallBawah (5)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1577808429
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577808428}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.55, y: -2.18, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 763908722}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1577808430
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577808428}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -4.7437143, y: -3.011856}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 9.236006, y: 6.1539307}
+  m_EdgeRadius: 0
 --- !u!1001 &1588929804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22462,6 +23157,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22537,6 +23236,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22594,6 +23297,84 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1593395056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1593395057}
+  - component: {fileID: 1593395058}
+  m_Layer: 6
+  m_Name: WallBawah (1)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1593395057
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593395056}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.63, y: -1.1400013, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 763908722}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1593395058
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593395056}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -4.7437143, y: -2.9425592}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 9.236006, y: 6.2925243}
+  m_EdgeRadius: 0
 --- !u!1001 &1595150497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22657,6 +23438,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23000,7 +23785,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 1744619524}
-  progressBar: {fileID: 0}
+  progressBar: {fileID: 1475561683}
   totalUpgradeLevels: 5
   playerPrefsKey: oceanCleanUp
 --- !u!1001 &1627016316
@@ -23066,6 +23851,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23306,6 +24095,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23481,6 +24274,150 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1641408695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1641408696}
+  - component: {fileID: 1641408699}
+  - component: {fileID: 1641408698}
+  - component: {fileID: 1641408697}
+  m_Layer: 5
+  m_Name: B.GoUp (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1641408696
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641408695}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 704054163}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -89.93}
+  m_SizeDelta: {x: 161.25, y: 62.625}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1641408697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641408695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1641408698}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1625607791}
+        m_TargetAssemblyTypeName: Transisi, Assembly-CSharp
+        m_MethodName: FadeOut
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1217817472}
+        m_TargetAssemblyTypeName: GoUp, Assembly-CSharp
+        m_MethodName: GoUpButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Up
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1641408698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641408695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 2002975017, guid: 644b137e771864649933ee3729e81a7e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1641408699
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641408695}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1642516785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23618,6 +24555,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -23840,6 +24781,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24558,6 +25503,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2b61037d715c6e4a8fec72cf945fae2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24796,6 +25745,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a2b61037d715c6e4a8fec72cf945fae2, type: 3}
       propertyPath: m_Name
       value: Coral Stone (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2b61037d715c6e4a8fec72cf945fae2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25050,6 +26003,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25124,6 +26081,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25197,6 +26158,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25346,6 +26311,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25419,6 +26388,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a2b61037d715c6e4a8fec72cf945fae2, type: 3}
       propertyPath: m_Name
       value: Coral Stone (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2b61037d715c6e4a8fec72cf945fae2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25494,6 +26467,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2b61037d715c6e4a8fec72cf945fae2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25567,6 +26544,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25807,6 +26788,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2b61037d715c6e4a8fec72cf945fae2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25880,6 +26865,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26198,6 +27187,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26271,6 +27264,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26528,6 +27525,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26601,6 +27602,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26766,6 +27771,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27006,6 +28015,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27080,6 +28093,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27153,6 +28170,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -27575,6 +28596,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27957,6 +28982,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28121,6 +29150,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28492,6 +29525,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2b61037d715c6e4a8fec72cf945fae2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28565,6 +29602,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28952,120 +29993,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954499666}
   m_CullTransparentMesh: 1
---- !u!1 &1962245002
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1962245005}
-  - component: {fileID: 1962245004}
-  - component: {fileID: 1962245003}
-  m_Layer: 0
-  m_Name: siluet ikan_0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!95 &1962245003
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1962245002}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 890d54a67665d884598be4f89bb5e0e2, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!212 &1962245004
-SpriteRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1962245002}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: -523589722, guid: b9b2465a1f043c14d9e044a032ce57fa, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.64}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
---- !u!4 &1962245005
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1962245002}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.4612627, y: -6.7, z: 22.3}
-  m_LocalScale: {x: 7, y: 7, z: 7}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1966552279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29278,6 +30205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2b61037d715c6e4a8fec72cf945fae2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29351,6 +30282,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29590,6 +30525,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a2b61037d715c6e4a8fec72cf945fae2, type: 3}
       propertyPath: m_Name
       value: Coral Stone (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a2b61037d715c6e4a8fec72cf945fae2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30167,6 +31106,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coral Stone 2 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30565,6 +31508,84 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &2070067079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2070067080}
+  - component: {fileID: 2070067081}
+  m_Layer: 6
+  m_Name: WallBawah (4)
+  m_TagString: Wall
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2070067080
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070067079}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 44.5, y: -0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 763908722}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2070067081
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070067079}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 7.4533806, y: -3.011856}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 8.659607, y: 6.1539307}
+  m_EdgeRadius: 0
 --- !u!1001 &2081938721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30628,6 +31649,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30702,6 +31727,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
       propertyPath: m_Name
       value: Stone 2 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31123,6 +32152,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
       propertyPath: m_Name
       value: Coral Stone 2 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3b8b95043fc62a44d862a9a201cfec69, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31727,6 +32760,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone 2 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b82e30a3ad4cd624c8009a562aafee75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31906,8 +32943,6 @@ SceneRoots:
   - {fileID: 1242570753}
   - {fileID: 1568581159}
   - {fileID: 292006458}
-  - {fileID: 1962245005}
-  - {fileID: 1222309403}
   - {fileID: 1923716902}
   - {fileID: 61476697}
   - {fileID: 1744619525}

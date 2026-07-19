@@ -142,6 +142,11 @@ MonoBehaviour:
   detectDistance: 4
   panicSpeed: 5
   panicDuration: 2
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  obstacleCheckDistance: 1
+  obstacleRadius: 0.5
 --- !u!60 &5166129496103237811
 PolygonCollider2D:
   m_ObjectHideFlags: 0
